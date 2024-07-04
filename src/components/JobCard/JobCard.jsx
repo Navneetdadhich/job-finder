@@ -6,7 +6,7 @@ function JobCard(props){
   const dateDiff = date1.diff(props.postedOn, 'day');
 //   const skills = ["react", "node"]
   return (
-    <div className="mx-40 mb-4 flex flex-col ">
+    <div className="mx-40 mb-4 flex flex-col min-w-40">
       <div className="text-xs sm:text-lg flex justify-between items-center flex-col sm:flex-row px-1 py-0 sm:px-6 sm:py-4 bg-gray-400 text-gray-800 rounded-md border border-black shadow-lg hover:border-blue-500 ">
         <div className="text-xs sm:text-lg flex flex-col items-start gap-1 sm:gap-3">
           <h1 className="text-xs sm:text-lg font-semibold">{props.title} - {props.company}</h1>
