@@ -16,7 +16,7 @@ function App() {
     setCustomSearch(false);
     const temp = []
     const jobsRef = query(collection(db, "jobs"));
-    const q = query(jobsRef, orderBy("postedOn", "desc"))
+    const q = query(jobsRef, orderBy("postedOn", "desc"));
     const req = await getDocs(q);
     req.forEach((job) => {
       // console.log(doc.id, " => ", doc.data());
